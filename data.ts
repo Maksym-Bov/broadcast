@@ -1,0 +1,1 @@
+export const eventLink = 'https://pharmaevents.proximaresearch.com/uk/event-342/tr/nameOfEvent?token='

@@ -1,8 +1,9 @@
 import {test} from "@playwright/test";
 import {faker} from "@faker-js/faker";
 import arr  from "../arr.json";
+import {eventLink} from "../data";
 
-const link = 'https://pharmaevents.proximaresearch.com/en/event-216/tr?token='
+const link = eventLink
 
 test('play video 1', async ({page}) => {
     const currentDateHash = arr[0].invited_link_token;
