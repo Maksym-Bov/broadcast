@@ -8,7 +8,7 @@ test('play video 1', async ({page}) => {
     const userName = faker.internet.userName();
     await page.goto(`${link}${currentDateHash}`);
     await page.locator('#name').fill(userName);
-    await page.locator('.btn').click();
+    await page.locator('button.em-btn').click();
     await new Promise(resolve => setTimeout(resolve, 10000));
     await new Promise(resolve => setTimeout(resolve, 600000));
     console.log('wait 60 sec');
